@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherology | An Accurate API Based Weather APP</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+          <div class="mb-0 h1 text-center text-title">WEATHEROLOGY</div>
+    <div class="row">
+        <div class="col-lg-6 left-side">
+            <div class="card card-main flex-shrink-0 rounded-3">
+                <!-- <img src="weather.jpg" class="card-img" alt="ConditionImage"> -->
+                <div class="card-body">
+                    <input type="search" class="border-0 rounded p-2" id="city-search1" placeholder="Search Your City" value="New York">
+                    <button id = "search-btn1" class="btn btn-dark" onclick="weather_fetch()">Search</button>
+                  <h5 class="card-title text-center mt-3"><span id="temperature1"></span>&deg;C</h5>
+                  
+                  <h5 id="temp-condition1" class="card-title text-center"></h5>
+                  <div id="weather-icon1" class="text-center">
+                </div>
+                <h1 id="city1" class="card-title text-center fw-bolder city-name "></h1>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="fw-bold">Humidity : <span id="city-humidity1"></span>%</div>
+                    <div class="fw-bold mt-3">Pressure : <span id="city-pressure1"></span>hPa</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="fw-bold">Wind Speed : <span id="wind-speed1"></span>m/s</div>
+                    <div class="fw-bold mt-3">Wind Direction : <span id="wind-direction1"></span>deg</div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="col-lg-6 right-side">
+                <div class="card card-main flex-shrink-0 mb-5 rounded-3">
+                  
+                    <div class="card-body">
+                        <input type="search" class=" border-0 rounded p-2" id="city-search2" placeholder="Search Your City" value="New Delhi">
+                        <button id = "search-btn2" class="btn btn-dark" onclick="weather_fetch()">Search</button>
+                      <h5 class="card-title text-center mt-3"><span id="temperature2"></span>&deg;C</h5>
+                      
+                      <h5 id="temp-condition2" class="card-title text-center"></h5>
+                      <div id="weather-icon2" class="text-center">
+                    </div>
+                    <h1 id="city2" class="card-title text-center fw-bolder city-name "></h1>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="fw-bold">Humidity : <span id="city-humidity2"></span>%</div>
+                          <div class="fw-bold mt-3">Pressure : <span id="city-pressure2"></span>hPa</div>
+                        </div>
+                        <div class="col-6">
+                          <div class="fw-bold">Wind Speed : <span id="wind-speed2"></span>m/s</div>
+                          <div class="fw-bold mt-3">Wind Direction : <span id="wind-direction2"></span>deg</div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  </div>
+                  </div>
+                 
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
